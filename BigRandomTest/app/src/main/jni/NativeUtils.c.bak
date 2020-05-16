@@ -1,0 +1,8 @@
+#include<jni.h>
+#include<string.h>
+
+jstring
+Java_net_vsmart_vsec_bigrandomtest_NativeUtils_initNative( JNIEnv* env,
+                                                  jobject thiz ) {
+    return (*env)->NewStringUTF(env, "Hello from JNI !");
+}
